@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');
+:root {
+  --font-family: 'Inconsolata', monospace;
+  /* --my-background: linear-gradient(to right top, #4e36f0, #423cec, #3641e7, #2945e2, #1b48dd, #005de9, #0070f2, #0083fa, #00a8ff, #00c9ff, #00e5ff, #55fff4); */
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background: #ff8008; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ff8008,
+    #ffc837
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #ff8008, #ffc837);
+  font-family: var(--font-family);
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+.list-item {
+  display: flex;
+  flex-wrap: wrap;
+}
+.list-item li {
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 1.5rem;
+  list-style: none;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 2px 9px 9px -6px rgba(0, 0, 0, 0.87);
+}
+.list-item li:hover {
+  cursor: pointer;
+}
+.list-item li input {
+  padding: 20px;
+  font-size: 1rem;
+}
+.list-item li input {
+  border: 0px;
+}
+.list-item li input:focus {
+  outline: none;
+}
+.timer-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  font-size: 5rem;
+  color: #fff;
+  line-height: 1.8;
+}
+.timer-align {
+  font-size: 10rem;
+}

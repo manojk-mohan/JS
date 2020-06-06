@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timer</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <nav id="set-Time">
+      <div class="container">
+        <ul class="list-item">
+          <li data-time="20">20 SECS</li>
+          <li data-time="300">Work 5</li>
+          <li data-time="900">Quick 15</li>
+          <li data-time="1200">snack 20</li>
+          <li data-time="3600">Lunch Break</li>
+          <li>
+            <form name="enterTimer" id="time-form">
+              <input type="number" name ="minutes"placeholder="Enter minutes" />
+            </form>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Countdown timer -->
+    <section id="timer-body">
+      <div class="timer-container">
+        <div id="timer-run" class="timer-align"></div>
+        <div class="end-time"></div>
+      </div>
+    </section>
+    <script src="/app.js"></script>
+  </body>
+</html>
